@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f16c60a722d9247dd93e233c42e92852, type: 2}
+  - {fileID: 2100000, guid: cc50ab7ff7c8f42bd8f37a71225d5367, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,3 +110,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c35f7fad5b984e4f8b1452d68d40428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crumblyStoneMaterial: {fileID: 2100000, guid: cc50ab7ff7c8f42bd8f37a71225d5367, type: 2}
+  crumblingStoneMaterial: {fileID: 2100000, guid: f16c60a722d9247dd93e233c42e92852, type: 2}

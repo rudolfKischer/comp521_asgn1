@@ -44,8 +44,6 @@ public class target : MonoBehaviour
             doorMeshRenderer.enabled = doorOpenToggle;
         }
         hitcounter ++;
-        Debug.Log(hitcounter);
-        Debug.Log(doorOpenToggle);
         if (doorOpenToggle == true) {
           meshRenderer.material = mat2;
           doorOpenToggle = false;
@@ -53,7 +51,6 @@ public class target : MonoBehaviour
           meshRenderer.material = mat1;
           doorOpenToggle = true;
         }
-        Debug.Log(doorOpenToggle);
 
 
     }
@@ -71,7 +68,6 @@ public class target : MonoBehaviour
         }
 
         if (!hitCoolDown) {
-            Debug.Log("Hit");
 
             toggleDoor();
             StartCoroutine(CooldownCoroutine());

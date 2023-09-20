@@ -6,7 +6,8 @@ using System.Threading;
 public class crumblyStone : MonoBehaviour
 {
     
-
+    public Material crumblyStoneMaterial;
+    public Material crumblingStoneMaterial;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +21,15 @@ public class crumblyStone : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision collision) {
-          Thread.Sleep(500);
-          Destroy(gameObject);
+          if (collision.gameObject.CompareTag("Player")) {
+                StartCoroutine(Crumble());
+          }
+    }
+
+    private IEnumerator Crumble() {
+          GetComponent<MeshRenderer>().material = crumblingStoneMaterial;
+          yield return new WaitForSeconds(0.5f);
+          gameObject.SetActive(false);
     }
 
     

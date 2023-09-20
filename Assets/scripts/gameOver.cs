@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class respawn : MonoBehaviour
+public class gameOver : MonoBehaviour
 {
-
     [SerializeField]
     private GameObject spawnPoint;
+
+    
+    public void GoalSuccess() {
+        Debug.Log("Goal Succeeded!");
+    }
 
     bool needsRespawn() {
         return transform.position.y < -10;
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         
@@ -26,4 +29,6 @@ public class respawn : MonoBehaviour
             transform.position = spawnPoint.transform.position;
         }
     }
+
+
 }

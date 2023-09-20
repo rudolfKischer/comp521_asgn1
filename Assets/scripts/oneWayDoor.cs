@@ -35,7 +35,6 @@ public class oneWayDoor : MonoBehaviour
     private void doorCheck(Collider other) {
         if (other.CompareTag("Player")) {
             Vector3 toObject = other.transform.position - doorFront.position;
-            // Debug.Log(Vector3.Dot(toObject, transform.forward));
             if (Vector3.Dot(toObject, transform.forward) > 0)
             {
                 blockerCollider.enabled = true;
@@ -50,14 +49,12 @@ public class oneWayDoor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Entered trigger");
         doorCheck(other);
 
     }
 
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("Exited trigger");
         doorCheck(other);
     }
 }

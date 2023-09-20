@@ -57,7 +57,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2838982568959955963}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.83, z: -0.63}
+  m_LocalPosition: {x: 0, y: -0.83, z: -1}
   m_LocalScale: {x: 0.125, y: 0.2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -75,8 +75,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.5, y: 7, z: 5.7051287}
-  m_Center: {x: 0, y: 0, z: 1.3525639}
+  m_Size: {x: 7.5, y: 7, z: 3.8540163}
+  m_Center: {x: 0, y: 0, z: 0.42700744}
 --- !u!114 &2838982568959955965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,6 +92,7 @@ MonoBehaviour:
   doorFront: {fileID: 2838982568338609859}
   blockerCollider: {fileID: 2838982569042288947}
   meshRenderer: {fileID: 2838982569042288946}
+  startClosed: 0
 --- !u!1 &2838982569042288945
 GameObject:
   m_ObjectHideFlags: 0
